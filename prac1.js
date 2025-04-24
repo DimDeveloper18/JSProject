@@ -20,7 +20,7 @@ function farenheitToCelcius(farenheit){
 }
 // console.log(farenheitToCelcius (10));
 
-let str1 = "Hello World"; //Doble quots
+let str1 = "Hello World"; //Double quots
 let str2 = "Hellow again"; //Single quots
 
 //Wraping quots

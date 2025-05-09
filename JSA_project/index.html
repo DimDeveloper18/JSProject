@@ -10,28 +10,47 @@
             background-color: #ffffff;
             color: #000000;
         }
+/* Grid layout config. for mobile display */
+        #wrapper{
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            gap: 20px;
+        }
+
+        header{ grid-row: 1 / 2;}
+        nav{ grid-row: 2 / 3;}
+        main{ grid-row: 3 / 4;}
+        aside{ grid-row: 4 / 5;}
+        footer{ grid-row: 5 / 6;}
+        
+/* General element's styling */
         header {
             background-color: #f5f5f5;
             border-bottom: 2px solid #000000;
             position: fixed;
         }
+
         .hbox{
             width: 360px;
             height: 130px;
             display: flex;
             flex-wrap: wrap;
         }
+
         .mlogo{
             margin-right: 15px;
         }
+
         .shname{
             width: 240px;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h1{
             margin-top: 5px;
             margin-left: 10px;
         }
+
         .regbutt{
             width: 210px;
             margin-left: 150px;
@@ -174,27 +193,27 @@
                 </div>
             </section>
     </main>
-    <aside>
-        <article class="martic">
-            <h4>Best latest offers</h4>
-            <article class="bsell1">
-                <h5>Batteries</h5>
-                <img src="images/slbattery1.jpg" alt="Sale Battery" height="50" width="100">
+        <aside>
+            <article class="martic">
+                <h4>Best latest offers</h4>
+                <article class="bsell1">
+                    <h5>Batteries</h5>
+                    <img src="images/slbattery1.jpg" alt="Sale Battery" height="50" width="100">
+                </article>
+                <article class="bsell2">
+                    <h5>Drill</h5>
+                    <img src="images/sldrill1.jpg" alt="Sale Drill" height="50" width="100">
+                </article>
+                <article class="bsell3">
+                    <h5>Skill Saw</h5>
+                    <img src="images/slskillsaw1.jpg" alt="Sale Saw" height="50" width="100">
+                </article>
+                <article class="bsell4">
+                    <h5>Cordless Drill</h5>
+                    <img src="images/slcdrill1.jpg" alt="Sale Cordles Drill" height="50" width="100">
+                </article>
             </article>
-            <article class="bsell2">
-                <h5>Drill</h5>
-                <img src="images/sldrill1.jpg" alt="Sale Drill" height="50" width="100">
-            </article>
-        <article class="bsell3">
-            <h5>Skill Saw</h5>
-            <img src="images/slskillsaw1.jpg" alt="Sale Saw" height="50" width="100">
-        </article>
-        <article class="bsell4">
-            <h5>Cordless Drill</h5>
-            <img src="images/slcdrill1.jpg" alt="Sale Cordles Drill" height="50" width="100">
-        </article>
-    </article>
-
+        </aside>
     <footer>Copyright &copy; 2025 Tools Store - All rights reserved</footer>
 </div>
 </body>

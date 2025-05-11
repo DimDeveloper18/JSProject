@@ -13,21 +13,15 @@
 /* Grid layout config. for mobile display */
         #wrapper{
             display: grid;
-            grid-template-rows: repeat(5, auto);
+            grid-template-columns: 330px;
+            grid-template-rows: repeat(5);
             gap: 20px;
         }
-
-        header{ grid-row: 1 / 2;}
-        nav{ grid-row: 2 / 3;}
-        main{ grid-row: 3 / 4;}
-        aside{ grid-row: 4 / 5;}
-        footer{ grid-row: 5 / 6;}
         
 /* General element's styling */
         header {
             background-color: #f5f5f5;
             border-bottom: 2px solid #000000;
-            position: fixed;
         }
 
         .hbox{
@@ -38,22 +32,25 @@
         }
 
         .mlogo{
-            margin-right: 15px;
+            height: 60px;
+            margin-right: 5px;
         }
 
         .shname{
-            width: 240px;
+            width: 230px;
+            height: 60px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         h1{
-            margin-top: 5px;
-            margin-left: 10px;
+            width: 180px;
+            margin-top: 10px;
+            margin-left: 5px;
         }
 
         .regbutt{
-            width: 210px;
-            margin-left: 150px;
+            width: 260px;
+            margin-left: 80px;
         }
         nav{
             border: 2px solid #000000;

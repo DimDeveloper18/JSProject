@@ -9,9 +9,10 @@
         body{
             background-color: #ecfcff;
             color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
         }
 /* Grid layout config. for mobile display */
-        #wrapper{
+        #wrapper {
             display: grid;
             grid-template-columns: 330px;
             grid-template-rows: repeat(5);
@@ -38,7 +39,6 @@
 
         .shname{
             height: 60px;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         h1{
@@ -60,7 +60,6 @@
             height: 80px;
             list-style-type: none;
             margin: 0px 0px 5px;
-
             padding-left: 3px;
             justify-content: space-around 1px;
         }
@@ -72,11 +71,40 @@
             color: #000000;
             text-decoration: none;
             border: 2px solid #eeecec;
-            font-family: Arial, Helvetica, sans-serif;
             font-weight: 500;
         }
         .soclink{
             display: none;
+        }
+
+        @media (min-width: 570px) {
+            #wrapper { grid-template-columns: 670px; }
+
+            .hbox{
+                width: 670px;
+                height: 100px;
+            }
+            .shname { 
+                width: 320px;
+                height: 100px;
+            }
+            h1{
+                margin-left: 50px;
+                text-align: center;
+            }
+            .regbutt{
+                margin-left: 0;
+            }
+            nav ul{
+                flex-wrap: nowrap;
+                width: 500px;
+                height: 30px;
+            }
+            li a{
+                font-weight: 600;
+            }
+
+
         }
     </style>
 

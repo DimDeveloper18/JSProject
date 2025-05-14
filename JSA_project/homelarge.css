@@ -1,0 +1,47 @@
+              /* Large screen size style configuration */
+        @media (min-width: 1440px) {
+            #wrapper{
+                grid-template-columns: 300px 3fr;
+            }
+            .hbox{
+                width: 1440px;
+                height: 150px;
+                justify-content: space-between;
+            }
+            .mlogo{
+                height: 150px;
+            }
+            .shname{
+                width: 700px;
+                height: 150px;
+            }
+            h1{
+                width: 700px;
+                text-align: center;
+                font-size: 70px;
+                letter-spacing: 5px;
+            }
+            .regbutt{
+                width: 200px;
+                height: 150px;
+            }
+            .regbut button{
+                font-size: 10px;
+                font-weight: 600;
+                width: 60px;
+            }
+            nav{
+                font-size: 24px;
+            }
+            nav ul{
+                width: 760px;
+            }
+            .soclink ul{
+                width: 200px;
+                height: 40px;
+            }
+            .soclink li{
+                width: 40px;
+                height: 40px;
+            }
+        }

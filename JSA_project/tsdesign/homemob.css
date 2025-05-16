@@ -20,14 +20,14 @@ body{
         }
 
         .hbox{
-            width: 305px;
-            height: 60px;
+            width: 359px;
+            height: 70px;
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .mlogo{
-            height: 30px;
+            height: 60px;
         }
         .mlogo img{
             width: 20vw;
@@ -35,7 +35,8 @@ body{
         }
 
         .shname{
-            height: 30px;
+            width: 140px;
+            height: 60px;
         }
 
         h1{
@@ -45,19 +46,12 @@ body{
         }
 
         .regbutt{
-            width: 170px;
-            margin-left: 130px;
-        }
-        .regbutt button{
-            font-size: 8px;
-            font-weight: 600;
-            width: 60px;
-        }
-        #log{
-            width: 50px;
-        }
-        #bask{
-            width: 50px;
+            width: 100px;
+            height: 60px;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
         }
         nav{
             border-bottom: 1.5px solid #000000;

@@ -58,9 +58,10 @@ body{
         }
         nav ul{
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            row-gap: 5px;
-            width: 270px;
+            gap: 7px;
+            width: 359px;
             height: 50px;
             list-style-type: none;
             margin: 0px 0px 5px;
@@ -70,10 +71,12 @@ body{
             width: 90px;
         }
         li a{
-            background-color: #f5f5f5;
+            background-color: #d14d4d;
             color: #000000;
             text-decoration: none;
-            border: 2px solid #eeecec;
+            border: 1px solid #000000;
+            border-radius: 3px;
+            padding: 2px;
             font-weight: 500;
         }
         .soclink{

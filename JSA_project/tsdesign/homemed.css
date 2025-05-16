@@ -34,11 +34,13 @@
             }
             nav ul{
                 flex-wrap: nowrap;
-                width: 505px;
+                flex-direction: row;
+                width: 490px;
                 height: 30px;
-                justify-content: space-between;
             }
             li a{
+                display: flex;
+                align-content: space-around;
                 font-weight: 600;
             }
             .soclink{
@@ -46,7 +48,7 @@
                 flex-direction: row-reverse;
             }
             .soclink ul{
-                width: 130px;
+                width: 140px;
             }
             .soclink li{
                 width: 30px;
@@ -61,6 +63,7 @@
             }
             .martic{
                 height: auto;
+                row-gap: 5px;
             }
             .martic h4{
                 margin-left: 10px;

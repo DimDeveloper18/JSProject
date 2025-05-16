@@ -82,6 +82,34 @@ body{
         .soclink{
             display: none;
         }
+        #sec1pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec2pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec3pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec4pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec5pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec6pic img{
+            width: 20vw;
+            height: 10vw;
+        }
+        #sec7pic img{
+            width: 20vw;
+            height: 10vw;
+        }
         .martic{
             display: flex;
             flex-wrap: wrap;

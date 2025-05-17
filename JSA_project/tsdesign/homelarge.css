@@ -62,4 +62,40 @@
             main{
                 font-size: 28px;
             }
+            aside{
+                font-size: 25px;
+            }
+            .martic{
+                justify-content: space-around;
+                gap: 50px;
+            }
+            .martic h4{
+                width: 300px;
+            height: 40px;
+            margin-left: 40px;
+            }
+            .martic img{
+            width: 10vw;
+            height: 7vw;
+        }
+            .bsell1{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .bsell2{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .bsell3{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .bsell4{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
         }

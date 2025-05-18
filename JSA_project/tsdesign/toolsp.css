@@ -93,3 +93,62 @@ body{
         .soclink{
             display: none;
         }
+        table{
+            width: 359px;
+            height: auto;
+            border: 3px solid #d14d4d;
+            border-spacing: 0px;
+        }
+        caption{
+            font-weight: 600;
+            font-size: 26px;
+            margin:20px;
+        }
+        th, tr, td{
+            border: 1px solid #7474ff;
+            text-align: center;
+            border-bottom-width: 3px;
+        }
+        th[scope="col"]{
+            background-color: #7474ff;
+            border-bottom: 3px solid #000000;
+        }
+        th[scope="row"]{
+            background-color: #e0e2ff;
+        }
+        .martic{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 400px;
+            align-content: space-between;
+            column-gap: 10px;
+        }
+        .martic h4{
+            width: 170px;
+            height: 40px;
+            margin-left: 100px;
+        }
+        .bsell1{
+            width: 170px;
+            height: 150px;
+            text-align: center;
+        }
+        .bsell2{
+            width: 170px;
+            height: 150px;
+            text-align: center;
+        }
+        .bsell3{
+            width: 170px;
+            height: 150px;
+            text-align: center;
+        }
+        .bsell4{
+            width: 170px;
+            height: 150px;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }

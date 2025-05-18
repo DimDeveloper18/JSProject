@@ -211,6 +211,12 @@ body{
                 grid-column: 2 / 3;
                 grid-row: 3;
             }
+            table{
+                width: 580px;
+                height: auto;
+                border: 3px solid #d14d4d;
+                border-spacing: 0px;
+            }
             aside{
                 grid-column: 1 / 2;
                 grid-row: 3;

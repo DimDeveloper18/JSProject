@@ -302,6 +302,17 @@ body{
             main{
                 font-size: 28px;
             }
+            table{
+                width: 1100px;
+                height: auto;
+            }
+            th, tr{
+                height: 200px;
+            }
+            td img{
+                width: 20vw;
+                height: 10vw;
+            }
             aside{
                 font-size: 25px;
             }

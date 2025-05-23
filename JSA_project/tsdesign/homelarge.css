@@ -20,17 +20,19 @@
                 height: 150px;
             }
             h1{
-                width: 700px;
+                width: 500px;
                 text-align: center;
                 font-size: 70px;
                 letter-spacing: 5px;
+                margin-left: auto;
             }
             .regbutt{
                 display: flex;
-                width: 220px;
+                width: 420px;
                 height: 40px;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: right;
+                column-gap: 5px;
             }
             button{
                 background-color: white;

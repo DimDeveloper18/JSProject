@@ -8,6 +8,7 @@
     <link href="./tsdesign/homemed.css" rel="stylesheet" media="(min-width: 768px)">
     <link href="./tsdesign/homelarge.css" rel="stylesheet" media="(min-width: 1440px)">
     <link rel="icon" href="images/spstlogo.jpg">
+    
 </head>
 <body>
     <div id="wrapper">
@@ -20,7 +21,14 @@
                     <h1>Tools Store</h1>
                 </div>
                 <div class="regbutt">
-                    <button>Registration</button>
+                    <button id="regBtn">Registration</button>
+                        <form id="regForm">
+                                User email:<input type="text" name=" email" id="email" required><br>
+                                User password:<input type="password" name="password" id="password" required><br>
+                                <div id="subbutt">
+                                    <button id="subRegBtn" value="default">Submit</button>
+                                </div>
+                            </form>
                     <button id="log">Login</button>
                     <button id="bask">Basket</button>
                 </div>
@@ -169,5 +177,6 @@
         </aside>
     <footer>Copyright &copy; 2025 Tools Store - All rights reserved</footer>
 </div>
+<script src="registr.js"></script>
 </body>
 </html>

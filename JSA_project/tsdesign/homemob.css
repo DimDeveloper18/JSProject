@@ -171,3 +171,16 @@ body{
     text-align: center;
     display: none;
 }
+#closeBtn{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+    position: top;
+    float: right;
+    background-color: white;
+    color: #d14d4d;
+    font-weight: 800;
+}
+#subButt{
+    margin-top: 20px;
+}

@@ -1,14 +1,18 @@
-
+/* @import url("contact.css"); */
+@import url("homemed.css");
+@import url("homelarge.css");
+/* @import url("toolsp.css"); */
 body{
             background-color: #ecfcff;
             color: #000000;
             font-family: Arial, Helvetica, sans-serif;
+            width: 305px;
         }
                 /* Grid layout config. for mobile display */
         #wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 2230px));
-            grid-auto-rows: minmax(30px, auto);
+            grid-template-columns: auto;
+            grid-template-rows: auto;
             gap: 20px;
         }
         
@@ -17,10 +21,11 @@ body{
             background-color: #f5f5f5;
             border-bottom: 3px solid #000000;
             padding: 2px;
+            width: 305px;
         }
 
         .hbox{
-            min-width: 320px;
+            width: 305px;
             max-width: 2230px;
             min-height: 70px;
             max-height: 1323px;
@@ -57,13 +62,14 @@ body{
         }
         nav{
             border-bottom: 2px solid #000000;
+            width: 305px;
         }
         nav ul{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
-            gap: 7px;
-            min-width: 320px;
+            gap: 10px;
+            width: 305px;
             max-width: 2230px;
             height: 50px;
             list-style-type: none;
@@ -71,7 +77,7 @@ body{
             padding-left: 3px;
         }
         nav li{
-            width: 90px;
+            width: 60;
         }
         nav a:link{
             background-color: #d14d4d;
@@ -97,71 +103,76 @@ body{
         .soclink{
             display: none;
         }
+        main{
+            text-align: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
         #sec1pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec2pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec3pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec4pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec5pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec6pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         #sec7pic img{
-            width: 20vw;
-            height: 10vw;
+            width: 30vw;
+            height: 20vw;
         }
         .martic{
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             height: 400px;
-            align-content: space-between;
+            justify-content: center;
             column-gap: 10px;
         }
         .martic h4{
             width: 170px;
             height: 40px;
-            margin-left: 100px;
+            text-align: center;
         }
         .bsell1{
-            width: 170px;
+            width: 145px;
             height: 150px;
             text-align: center;
         }
         .bsell2{
-            width: 170px;
+            width: 145px;
             height: 150px;
             text-align: center;
         }
         .bsell3{
-            width: 170px;
+            width: 145px;
             height: 150px;
             text-align: center;
         }
         .bsell4{
-            width: 170px;
+            width: 145px;
             height: 150px;
             text-align: center;
         }
         footer{
             text-align: center;
         }
-                          /*  JS Styling   */
+                          /*  JavaScript Styling   */
 
 
 #regForm{
@@ -172,7 +183,6 @@ body{
     text-align: center;
     display: none;
     position: absolute;
-    float: left;
 }
 #closeBtnReg{
     width: 20px;
@@ -211,4 +221,16 @@ body{
     height: 15px;
     border: 1px solid #000000;
     /* display: none; */
+}
+.highlight{
+    background-color: #ffff00;
+}
+#formS{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    width: 190px;
+    height: 150px;
+    text-align: center;
+    display: none;
+    position: absolute;
 }

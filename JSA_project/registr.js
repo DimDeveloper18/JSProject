@@ -1,4 +1,5 @@
-// Registration button code
+                            // Home page code
+                            // Registration button code
 
 const floatRegForm = document.getElementById("regForm");
 const closeWinReg = document.getElementById("closeBtnReg");
@@ -10,7 +11,7 @@ closeWinReg.addEventListener("click", () => {
     floatRegForm.style.display = "none";
 });
 
-// Login button code
+                              // Login button code
 
 const btnLog = document.getElementById("logBtn");
 const floatLogForm = document.getElementById ("logForm")
@@ -22,18 +23,54 @@ closeWinLog.addEventListener("click", () => {
     floatLogForm.style.display = "none";
 });
 
-// Submit button code
+                                // Submit button code
+
+const btnSub = document.getElementById("subRegBtn");
+btnSub.addEventListener("click", () => {
+    floatLogForm.style.display = "block";
+});
+
+floatRegForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    createStatusCell.innerText = "";
+
+    const mail = document.getElementById("emailReg").value;
+    const pass = document.getElementById("passwordReg").value;
+
+    if (!mail || !pass){
+        createStatusCell.innerText = '<p class= "error">" All fealds are required. </p>';
+    }else if (pass.length < 6){
+        createStatusCell.innerText = '<p class= "error"> Password must be at least 6 charachters long. </p>';
+    }else {
+        '<p class= "error">" You are regestered! </p>';
+    }
+});
+
+floatLogForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    createStatusCell.innerText = "";
+
+    const mail = document.getElementById("emaillog").value;
+    const pass = document.getElementById("passwordLog").value;
+
+    if (!mail || !pass){
+        createStatusCell.innerText = '<p class= "error">" All fealds are required. </p>';
+    }else if (pass.length < 6){
+        createStatusCell.innerText = '<p class= "error"> Password must be at least 6 charachters long. </p>';
+    }else {
+        '<p class= "error">" You are regestered! </p>';
+    }
+});
 
 const regBox = document.getElementsByClassName("regbutt");
 const createStatusCell = document.createElement("p");
 createStatusCell.innerText = "User name";
 const statusCell = document.getElementById(".status");
+function createStatusBar(){
 regBox.insertBefore(createStatusCell, btnReg);
+};
 
-floatRegForm.addEventListener("submit", function(event){
-    event.preventDefault();
-    createStatusCell.innerHTML = "";
-});
+
 
 
 
@@ -51,10 +88,14 @@ floatRegForm.addEventListener("submit", function(event){
 //     addStatusCell.style.display = "inline-block";
 // });
 
-// // Changing color by mouseover the aside head
-// const martic2 = document.getElementsByClassName("martic");
-// const asideHead = document.getElementsByTagName("h4");
-// function changeColor(h4){
-//     h4.style.color = "yellow";
-// }
-// asideHead.addEventListener("mouseover", () => asideHead.classList.add("highlight"));
+                                // Basket button cod
+                                
+const btnBask = document.getElementById("bask");
+const closeBaskWind = document.getElementById("closeBaskPrev");
+const floatBaskWind = document.getElementById("baskPrev");
+btnBask.addEventListener("click", () => {
+    floatBaskWind.style.display = "block";
+});
+closeBaskWind.addEventListener("click", () => {
+    floatBaskWind.style.display = "none";
+});

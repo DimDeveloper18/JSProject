@@ -1,0 +1,61 @@
+                          /*  JavaScript Styling   */
+
+#regForm{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    width: 190px;
+    height: 150px;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+#closeBtnReg{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+    position: top;
+    float: right;
+    background-color: white;
+    color: #d14d4d;
+    font-weight: 800;
+}
+#subButt{
+    margin-top: 20px;
+}
+#logForm{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    width: 190px;
+    height: 150px;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+#closeBtnLog{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+    position: top;
+    float: right;
+    background-color: white;
+    color: #d14d4d;
+    font-weight: 800;
+}
+.status{
+    width: 50px;
+    height: 15px;
+    border: 1px solid #000000;
+    /* display: none; */
+}
+.highlight{
+    background-color: #ffff00;
+}
+#formS{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    width: 190px;
+    height: 150px;
+    text-align: center;
+    display: none;
+    position: absolute;
+}

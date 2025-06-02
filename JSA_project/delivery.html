@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Store</title>
+    <link href="./tsdesign/homemob.css" rel="stylesheet">
+    <!-- <link href="./tsdesign/homemed.css" rel="stylesheet" media="(min-width: 768px)">
+    <link href="./tsdesign/homelarge.css" rel="stylesheet" media="(min-width: 1440px)"> -->
+    <link rel="icon" href="images/spstlogo.jpg">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="hbox">
+                <div class="mlogo">
+                    <img src="images/spstlogo.jpg" alt="Site Logo" height="50" width="100">
+                </div>
+                <div class="shname">
+                    <h1>Tools Store</h1>
+                </div>
+                <div class="regbutt">
+                    <button id="regBtn">Registration</button>
+                                <form id="regForm" novalidate>
+                                        <button id="closeBtnReg">X</button>
+                                        <label for="emailReg">User email</label>
+                                        <input type="email" id="emailReg" name="email" required><br>
+                                        <label>User password</label>
+                                        <input type="password" id="passwordReg" required><br>
+                                    <div id="subButtReg">
+                                        <button type="submit" id="subRegBtn" value="Submit">Submit</button>
+                                    </div>
+                                    <div id="errorstatus"></div>
+                                </form>
+                    <button id="logBtn">Login</button>
+                                <form id="logForm" novalidate>
+                                        <button id="closeBtnLog">X</button>
+                                        <label for="emailLog">User name</label>
+                                        <input type="email" id="emailLog" required><br>
+                                        <label>User password</label>
+                                        <input type="password" id="passwordLog" required><br>
+                                    <div id="subButtLog">
+                                        <button type="submit" id="subLogBtn" value="Submit">Submit</button>
+                                    </div>
+                                    <div id="emailErrorStatus"></div>
+                                </form>
+                    <button id="bask">Basket</button>
+                        <div id="baskPrev">
+                            <button id="closeBaskPrev">X</button>
+                                <p>
+                                    Items: <br>
+                                    Price: <br>
+                                    Total: <br>
+                                </p>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="tools.html"> Tools </a></li>
+                <li id="contli"><a href="contact.html"> Contact us </a></li>
+                <li><a href="#"> Brands </a></li>
+                <li id="delivli"><a href="#"> Delivery </a></li>
+            </ul>
+            <div class="soclink">
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="images/fbklink.png" alt="Facebook" height="30" width="30"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instlink.png" alt="Instagram" height="25" width="25"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/xlink.png" alt="X" height="30" width="30"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="images/youbelink.png" alt="Youtube" height="25" width="25"></a></li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <h2>Delivery Information</h2>
+        <p>Thank you for shopping with us! Below are the details regarding our delivery services. We deliver our 
+            products across the country and to the Europe. All our orders are processed within 2 business days.</p>
+        <section id="deliv1">
+            <h4>Shipping Info:</h4>
+            <p>
+                 Standard nationwide delivery with an estimated arrival time of 3 business days.<br>
+                 International shipping to the EU is estimated to take 7 business days or more, depending on the 
+                 location.<br>
+                 Shipping charges are calculated based on the weight, dimensions, and destination of the order. 
+                 For larger and heavier items, there may be additional fees.<br>
+            </p>
+            <h4>Tracking Info:</h4>
+            <p>
+                Once your order has been shipped, you will be provided with a tracking number by email, which will 
+                allow you to monitor the status of your shipment.
+            </p>
+            <h4>Handling and safety procedures:</h4>
+            <p>
+                We take extra care when packaging our power tools in order to ensure their safe arrival. Upon 
+                receiving your package, please inspect it carefully for any signs of damage and contact us immediately 
+                if you notice any.
+            </p>
+        </section>
+        <section id="deliv2">
+                <table id="delivertb">
+                    <caption id="delivercap">Shipping Prices:</caption>
+                        <tr>
+                            <th id="dhead1" colspan="5">
+                                Ireland
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Standard</th>
+                            <td>AnPost</td>
+                            <td>0 - 5 KG</td>
+                            <td>11.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Express</th>
+                            <td>DHL</td>
+                            <td>0 - 5 KG</td>
+                            <td>25.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Standard</th>
+                            <td>AnPost</td>
+                            <td>5 - 10 KG</td>
+                            <td>17.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Express</th>
+                            <td>DHL</td>
+                            <td>5 - 10 KG</td>
+                            <td>49.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Standard</th>
+                            <td>AnPost</td>
+                            <td>10 - 15 KG</td>
+                            <td>25.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Express</th>
+                            <td>DHL</td>
+                            <td>10 - 15 KG</td>
+                            <td>69.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Standard</th>
+                            <td>AnPost</td>
+                            <td>15 - 20 KG</td>
+                            <td>50.99€</td>
+                        </tr>
+                        <tr>
+                            <th>Express</th>
+                            <td>DHL</td>
+                            <td>15 - 20 KG</td>
+                            <td>100.99€</td>
+                        </tr>
+                </table>
+        </section>
+    </main>
+        <aside>
+            <article class="martic">
+                <h4 id="asHead">Best latest offers</h4>
+                <article class="bsell1" id="battery">
+                    <h5>Batteries</h5>
+                    <img src="images/slbattery1.jpg" alt="Sale Battery" height="50" width="100">
+                    <div id="windDet1">
+                        <strong>Bosch battery</strong> 
+                            <p>
+                                Proudct details<br>
+                                Model: GBA<br>
+                                Voltage: 18v 5Ah<br>
+                                Price: 70€<br>
+                            </p>
+                    </div>
+                </article>
+                <article class="bsell2" id="drill">
+                    <h5>Drill</h5>
+                    <img src="images/sldrill1.jpg" alt="Sale Drill" height="50" width="100">
+                    <div id="windDet1">
+                        <strong>Hitachi drill</strong> 
+                            <p>
+                                Proudct details<br>
+                                Model: BSL<br>
+                                Voltage: 240v<br>
+                                Price: 150€<br>
+                            </p>
+                    </div>
+                </article>
+                <article class="bsell3" id="skillsaw">
+                    <h5>Skill Saw</h5>
+                    <img src="images/slskillsaw1.jpg" alt="Sale Saw" height="50" width="100">
+                    <div id="windDet1">
+                        <strong>Makita skill saw</strong> 
+                            <p>
+                                Proudct details<br>
+                                Model: BMS<br>
+                                Voltage: 110v<br>
+                                Price: 250€<br>
+                            </p>
+                    </div>
+                </article>
+                <article class="bsell4" id="cordlessdrill">
+                    <h5>Cordless Drill</h5>
+                    <img src="images/slcdrill1.jpg" alt="Sale Cordles Drill" height="50" width="100">
+                    <div id="windDet1">
+                        <strong>DeWalt cordless drill</strong> 
+                            <p>
+                                Proudct details<br>
+                                Model: XR<br>
+                                Voltage: 18v 5Ah<br>
+                                Price: 200€<br>
+                            </p>
+                    </div>
+                </article>
+            </article>
+        </aside>
+    <footer>Copyright &copy; 2025 Tools Store - All rights reserved</footer>
+</div>
+<script src="registr.js"></script>
+<script src="aside.js"></script>
+</body>
+</html>

@@ -23,20 +23,20 @@ closeWinLog.addEventListener("click", () => {
     floatLogForm.style.display = "none";
 });
 
-                                // Submit button code
+                                // Submit button code for Register form
 
 const btnSub = document.getElementById("subRegBtn");
 btnSub.addEventListener("click", () => {
-    floatLogForm.style.display = "block";
+    floatRegForm.style.display = "block";
 });
 
 floatRegForm.addEventListener("submit", function(event){
     event.preventDefault();
     createStatusCell.innerText = "";
-
+    
     const mail = document.getElementById("emailReg").value;
     const pass = document.getElementById("passwordReg").value;
-
+console.log(mail,"...", pass);
     if (!mail || !pass){
         createStatusCell.innerText = '<p class= "error">" All fealds are required. </p>';
     }else if (pass.length < 6){
@@ -45,48 +45,31 @@ floatRegForm.addEventListener("submit", function(event){
         '<p class= "error">" You are regestered! </p>';
     }
 });
+
+const btnSub2 = document.getElementById("subLogBtn");
+btnSub.addEventListener("click", () => {
+    floatLogForm.style.display = "block";
+});
+                                // Submit button code for Login form
 
 floatLogForm.addEventListener("submit", function(event){
     event.preventDefault();
-    createStatusCell.innerText = "";
-
-    const mail = document.getElementById("emaillog").value;
+    const statusCell = document.getElementById("emailErrorStatus");
+    const mail = document.getElementById("emailLog").value;
     const pass = document.getElementById("passwordLog").value;
-
+console.log("mail:" +mail);
+console.log("pass:" +pass);
+console.log("!mail" +!mail);
+console.log("!pass" +!pass);
     if (!mail || !pass){
-        createStatusCell.innerText = '<p class= "error">" All fealds are required. </p>';
+        console.log("inside !mail || !pass");
+        statusCell.innerHTML = '<p class= "error"> All fields are required. </p>';
     }else if (pass.length < 6){
-        createStatusCell.innerText = '<p class= "error"> Password must be at least 6 charachters long. </p>';
+        statusCell.innerHTML = '<p class= "error"> Password must be at least 6 charachters long. </p>';
     }else {
-        '<p class= "error">" You are regestered! </p>';
+        statusCell.innerHTML = '<p class= "error"> You are regestered! </p>';
     }
 });
-
-const regBox = document.getElementsByClassName("regbutt");
-const createStatusCell = document.createElement("p");
-createStatusCell.innerText = "User name";
-const statusCell = document.getElementById(".status");
-function createStatusBar(){
-regBox.insertBefore(createStatusCell, btnReg);
-};
-
-
-
-
-
-// const areaReg = document.getElementsByClassName("regbutt");
-// const btnSub = document.getElementById("subLogBtn");
-// const addStatusCell = () => {
-//     const statusCell = document.createElement("div");
-//     statusCell.innerText = "text";
-//     statusCell.classList.add("status");
-//     areaReg.appendChild(statusCell);
-// }
-// addStatusCell();
-
-// btnSub.addEventListener("click", () => {
-//     addStatusCell.style.display = "inline-block";
-// });
 
                                 // Basket button cod
                                 

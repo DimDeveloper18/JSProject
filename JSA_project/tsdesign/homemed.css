@@ -1,102 +1,153 @@
          /* Medium screen size style configuration */
         @media (min-width: 768px) {
             body{
-                min-width: 750px;
+                min-width: 98%;
             }
-            #wrapper {
+            /* #wrapper {
+                display: grid;
                 grid-template-columns: 50px, 700px;
-            }
+            } */
             header{
                 grid-column: 1 / 3;
                 grid-row: 1;
-                min-width: 750px;
+                min-width: 100%;
             }
 
-            .hbox{
-                min-width: 750px;
+            /* .hbox{
+                min-width: 100%;
                 height: 100px;
                 justify-content: space-between;
-            }
-            .mlogo{
+            } */
+            /* .mlogo{
                 min-height: 100px;
-            }
+            } */
             .shname { 
-                width: 300px;
-                height: 100px;
+                width: 40%;
+                /* height: 100px; */
             }
             h1{
-                margin-left: 30px;
-                width: 300px;
+                /* margin-left: 30px; */
+                width: 90%;
+                height: 50%;
+                text-align: right;
+                font-size: 170%;
             }
             .regbutt{
+                display: flex;
                 flex-direction: row;
-                min-width: 100px;
-                min-height: 100px;
+                min-width: 33%;
+                /* min-height: 100px; */
+                justify-content: right;
+                gap: 3px;
             }
-            .regbutt button{
-                width: 90px;
-            }
+            /* .regbutt button{
+                width: 80px;
+                height: 20px;
+            } */
             nav{
                 grid-column: 1 / 3;
                 grid-row: 2;
-                min-width: 750px;
-                display: flex;
+                /* min-width: 750px; */
+                /* display: flex; */
                 justify-content: space-between;
             }
-            nav ul{
+            /* nav ul{
                 flex-wrap: nowrap;
                 flex-direction: row;
                 min-width: 450px;
                 max-height: fit-content;
-            }
-            li a{
+            } */
+            /* li a{
                 display: flex;
                 font-weight: 600;
-            }
+            } */
             .soclink{
                 display: flex;
-                width: 170px;
+                /* width: 170px; */
                 
             }
-            .soclink ul{
+            /* .soclink ul{
                 display: flex;
                 min-width: 70px;
-            }
-            .soclink li{
+            } */
+            /* .soclink li{
                 width: 30px;
-            }
+            } */
             main{
                 grid-column: 2 / 3;
                 grid-row: 3;
                 min-width: 500px;
             }
+            #sec1pic{
+                display: flex;
+                width: 500px;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
+            #sec2pic{
+                display: flex;
+                width: 500px;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
+            #sec3pic{
+                display: flex;
+                width: 500px;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
+            #sec4pic{
+                display: flex;
+                width: 500px;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
             #sec5pic{
                 display: flex;
+                height: 220px;
                 flex-wrap: wrap;
-                row-gap: 20px;
-                column-gap: 20px;
+                justify-content: center;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
+            #sec5pic img{
+                max-width: 150px;
+                max-height: 100px;
             }
             #sec6pic{
                 display: flex;
+                height: 220px;
                 flex-wrap: wrap;
-                row-gap: 20px;
-                column-gap: 20px;
+                justify-content: center;
+                column-gap: 10px;
+                margin-left: 15px;
+            }
+            #sec6pic img{
+                max-width: 150px;
+                max-height: 100px;
+            }
+            #sec7pic{
+                display: flex;
+                width: 500px;
+                column-gap: 10px;
+                justify-content: center;
+                margin-left: 10px;
             }
             aside{
                 grid-column: 1 / 2;
                 grid-row: 3;
-                min-width: 150px;
+                /* min-width: 150px; */
             }
             .martic{
-                min-width: 150px;
+                /* min-width: 150px; */
                 min-height: 700px;
-                row-gap: 5px;
-                justify-content: center;
+                /* row-gap: 5px; */
+                /* justify-content: center; */
             }
-            .martic h4{
+            /* .martic h4{
                 justify-content: center;
                 min-width: 150px;
-            }
+            } */
             .bsell1{
                 min-width: 150px;
             }

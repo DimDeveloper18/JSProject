@@ -1,352 +1,110 @@
-body{
-            background-color: #ecfcff;
-            color: #000000;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-                /* Grid layout config. for mobile display */
-        #wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 498px));
-            grid-auto-rows: minmax(30px, auto);
-            gap: 20px;
-        }
-        
-                    /* General element's styling */
-        header {
-            background-color: #f5f5f5;
-            border-bottom: 3px solid #000000;
-            padding: 2px;
-        }
+                                /* Tools page style */
 
-        .hbox{
-            width: 359px;
-            height: 70px;
-            display: flex;
-            justify-content: space-between;
-        }
+.ptools{
+    width: 98%;
+}
+#pttable{
+    width: 90%;
+    height: auto;
+    border: 3px solid #d14d4d;
+    border-spacing: 0px;
+}
+#ptcap{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 20px;
+}
+#httable{
+    width: 90%;
+    height: auto;
+    border: 3px solid #d14d4d;
+    border-spacing: 0px;
+}
+#htcap{
+    font-weight: 600;
+    font-size: 26px;
+    margin:20px;
+}
+#acstable{
+    width: 90%;
+    height: auto;
+    border: 3px solid #d14d4d;
+    border-spacing: 0px;
+}
+#acscap{
+    font-weight: 600;
+    font-size: 26px;
+    margin:20px;
+}
+th, tr, td{
+    border: 1px solid #7474ff;
+    text-align: center;
+    border-bottom-width: 3px;
+}
+th[scope="col"]{
+    background-color: #7474ff;
+    border-bottom: 3px solid #000000;
+}
+th[scope="row"]{
+    background-color: #e0e2ff;
+}
+th, tr{
+    height: 70px;
+}
+td img{
+    display: none;
+}
+#thimg{
+    display: none;
+}
 
-        .mlogo{
-            height: 60px;
-        }
-        .mlogo img{
-            width: 20vw;
-            height: 10vw;
-        }
+            /* Medium screen size table style */
 
-        .shname{
-            width: 140px;
-            height: 60px;
-        }
+             @media (min-width: 768px){
+#pttable{
+    width: 100%;
+    height: auto;
+}
+#ptcap{
+    font-size: 26px;
+    margin: 20px;
+}
+#httable{
+    width: 100%;
+    height: auto;
+}
+#htcap{
+    font-size: 26px;
+    margin:20px;
+}
+#acstable{
+    width: 100%;
+    height: auto;
+}
+#acscap{
+    font-size: 26px;
+    margin:20px;
+}
+#thimg{
+    display: flex;
+}
+ td img{
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+ }
 
-        h1{
-            font-size: 6vw;
-            margin-top: 5px;
-            margin-left: 5px;
-        }
-
-        .regbutt{
-            width: 100px;
-            height: 60px;
-            justify-content: space-around;
-            display: flex;
-            flex-direction: column;
-            row-gap: 2px;
-        }
-        nav{
-            border-bottom: 2px solid #000000;
-        }
-        nav ul{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            gap: 7px;
-            width: 359px;
-            height: 50px;
-            list-style-type: none;
-            margin: 0px 0px 5px;
-            padding-left: 3px;
-        }
-        nav li{
-            width: 90px;
-        }
-        nav a:link{
-            background-color: #d14d4d;
-            color: #000000;
-            text-decoration: none;
-            border: 1px solid #000000;
-            border-radius: 3px;
-            padding: 2px;
-            font-weight: 500;
-        }
-        nav a:hover{
-            color: white;
-            border: 3px solid #000000;
-        }
-        nav a:visited{
-            color: white;
-            border: 3px solid #000000;
-        }
-        nav a:active{
-            color: white;
-            border: 3px solid #000000;
-        }
-        .soclink{
-            display: none;
-        }
-        table{
-            width: 359px;
-            height: auto;
-            border: 3px solid #d14d4d;
-            border-spacing: 0px;
-        }
-        caption{
-            font-weight: 600;
-            font-size: 26px;
-            margin:20px;
-        }
-        th, tr, td{
-            border: 1px solid #7474ff;
-            text-align: center;
-            border-bottom-width: 3px;
-        }
-        th[scope="col"]{
-            background-color: #7474ff;
-            border-bottom: 3px solid #000000;
-        }
-        th[scope="row"]{
-            background-color: #e0e2ff;
-        }
-        .martic{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            height: 400px;
-            align-content: space-between;
-            column-gap: 10px;
-        }
-        .martic h4{
-            width: 170px;
-            height: 40px;
-            margin-left: 100px;
-        }
-        .bsell1{
-            width: 170px;
-            height: 150px;
-            text-align: center;
-        }
-        .bsell2{
-            width: 170px;
-            height: 150px;
-            text-align: center;
-        }
-        .bsell3{
-            width: 170px;
-            height: 150px;
-            text-align: center;
-        }
-        .bsell4{
-            width: 170px;
-            height: 150px;
-            text-align: center;
-        }
-        footer{
-            text-align: center;
-        }
-                                  /* Medium screen size style configuration */
-        @media (min-width: 768px){
-            #wrapper {
-                grid-template-columns: 150px 3fr;
-            }
-            header{
-                grid-column: 1 / 3;
-                grid-row: 1;
-            }
-
-            .hbox{
-                width: 750px;
-                height: 100px;
-                justify-content: space-between;
-            }
-            .mlogo{
-                height: 100px;
-            }
-            .shname { 
-                width: 300px;
-                height: 100px;
-            }
-            h1{
-                margin-left: 30px;
-                width: 300px;
-            }
-            .regbutt{
-                height: 100px;
-                row-gap: 0px;
-            }
-            nav{
-                grid-column: 1 / 3;
-                grid-row: 2;
-            }
-            nav ul{
-                flex-wrap: nowrap;
-                flex-direction: row;
-                width: 490px;
-                height: 30px;
-            }
-            li a{
-                display: flex;
-                align-content: space-around;
-                font-weight: 600;
-            }
-            .soclink{
-                display: flex;
-                flex-direction: row-reverse;
-            }
-            .soclink ul{
-                width: 140px;
-            }
-            .soclink li{
-                width: 30px;
-            }
-            main{
-                grid-column: 2 / 3;
-                grid-row: 3;
-            }
-            table{
-                width: 580px;
-                height: auto;
-            }
-            th, tr{
-                height: 100px;
-            }
-            td img{
-                width: 10vw;
-                height: 10vw;
-            }
-            aside{
-                grid-column: 1 / 2;
-                grid-row: 3;
-            }
-            .martic{
-                height: auto;
-                row-gap: 5px;
-            }
-            .martic h4{
-                margin-left: 10px;
-            }
-            footer{
-                grid-column: 1 / 3;
-                grid-row: 4;
-            }
-        }
-                                    /* Large screen size style configuration */
-        @media (min-width: 1440px) {
-            #wrapper{
-                grid-template-columns: 300px 3fr;
-            }
-            header{
-                grid-column: 1 / 3;
-                grid-row: 1;
-            }
-            .hbox{
-                width: 1420px;
-                height: 150px;
-                justify-content: space-between;
-            }
-            .mlogo{
-                height: 150px;
-            }
-            .shname{
-                width: 700px;
-                height: 150px;
-            }
-            h1{
-                width: 700px;
-                text-align: center;
-                font-size: 70px;
-                letter-spacing: 5px;
-            }
-            .regbutt{
-                display: flex;
-                width: 220px;
-                height: 40px;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            button{
-                background-color: white;
-                border-radius: 5px;
-            }
-            nav{
-                font-size: 24px;
-            }
-            nav ul{
-                width: 760px;
-                gap: 50px;
-            }
-            .soclink ul{
-                width: 200px;
-                height: 40px;
-                gap: 10px;
-                justify-content: space-between;
-            }
-            .soclink li{
-                width: 40px;
-                height: 40px;
-            }
-            #contli{
-                width: 130px;
-            }
-            #delivli{
-                width: 150px;
-            }
-            main{
-                font-size: 28px;
-            }
-            table{
-                width: 1100px;
-                height: auto;
-            }
-            th, tr{
-                height: 200px;
-            }
-            td img{
-                width: 20vw;
-                height: 10vw;
-            }
-            aside{
-                font-size: 25px;
-            }
-            .martic{
-                justify-content: space-around;
-                gap: 50px;
-            }
-            .martic h4{
-                width: 300px;
-            height: 40px;
-            margin-left: 40px;
-            }
-            .martic img{
-            width: 10vw;
-            height: 7vw;
-        }
-            .bsell1{
-            width: 300px;
-            height: 200px;
-            text-align: center;
-        }
-        .bsell2{
-            width: 300px;
-            height: 200px;
-            text-align: center;
-        }
-        .bsell3{
-            width: 300px;
-            height: 200px;
-            text-align: center;
-        }
-        .bsell4{
-            width: 300px;
-            height: 200px;
-            text-align: center;
-        }
-        }
+                    /* Large screen size table style */
+ 
+                @media (min-width: 1440px){
+#ptcap{
+    font-size: 200%;
+}
+#htcap{
+    font-size: 200%;
+}
+#acscap{
+    font-size: 200%;
+}
+}

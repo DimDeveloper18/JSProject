@@ -36,7 +36,6 @@ floatRegForm.addEventListener("submit", function(event){
     
     const mail = document.getElementById("emailReg").value;
     const pass = document.getElementById("passwordReg").value;
-console.log(mail,"...", pass);
     if (!mail || !pass){
         createStatusCell.innerText = '<p class= "error">" All fealds are required. </p>';
     }else if (pass.length < 6){

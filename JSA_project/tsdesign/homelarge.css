@@ -27,16 +27,11 @@ header{
 h1{
     max-width: 100%;
     max-height: 100%;
-    /* text-align: center; */
-    /* font-size: 5em; */
     letter-spacing: 5px;
-    /* margin-left: auto; */
 }
 .regbutt{
-    /* display: flex; */
     min-width: 30%;
     min-height: 25%;
-    /* gap: 15px; */
 }
 .regbutt button{
     min-width: 25%;
@@ -47,7 +42,6 @@ h1{
     font-size: 18px;
 }
 nav{
-    /* display: flex; */
     min-width: 100%;
     font-size: 24px;
 }
@@ -80,28 +74,16 @@ aside{
     height: 7vw;
 }
 #sec1pic{
-    /* display: flex; */
     width: 98%;
-    /* column-gap: 10px; */
-    /* margin-left: 15px; */
 }
 #sec2pic{
-    /* display: flex; */
     width: 98%;
-    /* column-gap: 10px; */
-    /* margin-left: 15px; */
 }
 #sec3pic{
-    /* display: flex; */
     width: 98%;
-    /* column-gap: 10px; */
-    /* margin-left: 15px; */
 }
 #sec4pic{
-    /* display: flex; */
     width: 98%;
-    /* column-gap: 10px; */
-    /* margin-left: 15px; */
 }
 #sec5pic{
     display: flex;
@@ -120,29 +102,6 @@ aside{
     max-height: 50%;
 }
 #sec7pic{
-    /* display: flex; */
     width: 98%;
-    /* column-gap: 10px; */
-    /* margin-left: 15px; */
 }
-/* .bsell1{
-    width: 300px;
-    height: 200px;
-    text-align: center;
-} */
-/* .bsell2{
-    width: 300px;
-    height: 200px;
-    text-align: center;
-} */
-/* .bsell3{
-    width: 300px;
-    height: 200px;
-    text-align: center;
-} */
-/* .bsell4{
-    width: 300px;
-    height: 200px;
-    text-align: center;
-} */
 }
